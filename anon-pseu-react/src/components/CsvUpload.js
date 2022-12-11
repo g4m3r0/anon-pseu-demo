@@ -26,7 +26,7 @@ const CSVUploader = () => {
     const lines = data.split('\n');
     const headers = lines[0].split(',');
     const csvData = [];
-    for (let i = 1; i < lines.length; i++) {
+    for (let i = 1; i < lines.length - 1; i++) {
       const row = lines[i].split(',');
       const rowData = {};
       for (let j = 0; j < headers.length; j++) {
@@ -34,6 +34,9 @@ const CSVUploader = () => {
       }
       csvData.push(rowData);
     }
+
+    console.log('csvData:');
+    console.log(csvData);
     return csvData;
   };
 
@@ -152,6 +155,9 @@ const CSVUploader = () => {
       default:
         break;
     }
+
+    console.log('newCsvData:');
+    console.log(newCsvData);
     setCsvData(newCsvData);
   };
 
