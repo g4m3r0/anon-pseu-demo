@@ -9,12 +9,12 @@ function TopNavBar() {
       <Navbar.Brand href="#home">
         <img
           alt=""
-          src="/logo.svg"
+          src="./logo.jpg"
           width="30"
           height="30"
           className="d-inline-block align-top"
         />{' '}
-        Anonymization and Pseudonymization - DEMO
+        Anonymization and Pseudonymization Demo
       </Navbar.Brand>
     </Container>
   </Navbar>
