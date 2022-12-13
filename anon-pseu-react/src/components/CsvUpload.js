@@ -213,17 +213,22 @@ const CSVUploader = () => {
                       {key}
                       <select onChange={(event) => pseudonymizeData(event.target.value, key)}>
                         <option value="">Select pseudonymization method</option>
+                        <option disabled>────────────────</option>
                         <option value="anonymize">Anonymize</option>
+                        <option disabled>────────────────</option>
                         <option value="md5">MD5</option>
                         <option value="md5WithSalt">MD5 with salt</option>
                         <option value="sha1">SHA1</option>
                         <option value="sha1WithSalt">SHA1 with salt</option>
                         <option value="encrypt">AES Encryption</option>
                         <option value="decrypt">AES Decryption</option>
+                        <option disabled>────────────────</option>
                         <option value="round-to-int">Round to integer</option>
+                        <option value="round-to-tens">Round to the nearest tens digit</option>
+                        <option disabled>────────────────</option>
                         <option value="remove-day">Remove Day from Date</option>
                         <option value="remove-day-month">Remove Day and Month from Date</option>
-                        <option value="round-to-tens">Round to the nearest tens digit</option>
+                        <option disabled>────────────────</option>
                       </select>
                     </th>
                   ))}
