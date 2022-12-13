@@ -1,4 +1,4 @@
-# 121 Anonymization and Pseudonymization - Demo
+# Anonymization and Pseudonymization of CSV Data
 
 This webapp was developed as part of the "Forschungsseminar" in Web Engineering at the [Distributed and Self-organizing Systems](https://vsr.informatik.tu-chemnitz.de/) faculty at Technical University Chemnitz in the Wintersemester 2022/2023.
 
