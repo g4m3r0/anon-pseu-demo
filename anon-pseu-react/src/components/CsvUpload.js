@@ -194,9 +194,17 @@ const CSVUploader = () => {
 
       <Card>
         <Card.Header>Anonymization and Pseudonymization</Card.Header>
-        <Card.Body>
-          {csvData.length === 0 && <Alert variant="primary">Table is empty. Please upload a CSV file to display data.</Alert>}
-          <Table striped bordered hover>
+        <Card.Body className='text-center table-responsive'>
+          <img
+              alt=""
+              width="652"
+              height="217"
+              src="./Anon-Pseud-Process.png"
+          />
+
+          {csvData.length === 0 && <Alert variant="primary" className='mt-2'>Table is empty. Please upload a CSV file to display data.</Alert>}
+          
+          <Table className='primary' striped bordered hover>
             <thead>
               <tr>
                 {csvData.length > 0 &&
