@@ -14,7 +14,7 @@ function TopNavBar() {
           height="30"
           className="d-inline-block align-top"
         />{' '}
-        Anonymization and Pseudonymization Demo
+        121 Anonymization and Pseudonymization - Demo
       </Navbar.Brand>
     </Container>
   </Navbar>
